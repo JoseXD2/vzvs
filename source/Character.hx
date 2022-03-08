@@ -498,6 +498,73 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+			case 'sonic-run':
+				frames = Paths.getSparrowAtlas('characters/SONIC_RUN');
+				animation.addByPrefix('idle', 'SONIC RUNNING HEAD0', 0, false);
+				animation.addByPrefix('singUP', 'SONIC RUNNING HEAD UP', 24, false);
+				animation.addByPrefix('singDOWN', 'SONIC RUNNING HEAD DOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'SONIC RUNNING HEAD LEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'SONIC RUNNING HEAD RIGHT', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -30, -10);
+				addOffset("singRIGHT", -30, -15);
+				addOffset("singLEFT", -25, 10);
+				addOffset("singDOWN", 10, 20);
+
+				playAnim('idle');
+
+			case 'bf-run':
+				frames = Paths.getSparrowAtlas('characters/HD_BF_SONIC');
+				animation.addByPrefix('idle', 'BF TOP0', 0, false);
+				animation.addByPrefix('singUP', 'BF TOP NOTE UP', 24, false);
+				animation.addByPrefix('singDOWN', 'BF TOP NOTE DOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'BF TOP NOTE LEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF TOP NOTE RIGHT', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF TOP INVISIBLE', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF TOP INVISIBLE', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF TOP INVISIBLE', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF TOP INVISIBLE', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -7, 19);
+				addOffset("singRIGHT", -16, 7);
+				addOffset("singLEFT", -1, 10);
+				addOffset("singDOWN", -3, -3);
+				addOffset("singUPmiss", -30, 10);
+				addOffset("singRIGHTmiss", -30, -15);
+				addOffset("singLEFTmiss", -25, 10);
+				addOffset("singDOWNmiss", 10, 20);
+
+				playAnim('idle');
+				
+				flipX = true;
+
+			case 'bf-run-super':
+				frames = Paths.getSparrowAtlas('characters/bfSuperRunningTop');
+				animation.addByPrefix('idle', 'BF TOP0', 0, false);
+				animation.addByPrefix('singUP', 'BF TOP NOTE UP', 24, false);
+				animation.addByPrefix('singDOWN', 'BF TOP NOTE DOWN', 24, false);
+				animation.addByPrefix('singLEFT', 'BF TOP NOTE LEFT', 24, false);
+				animation.addByPrefix('singRIGHT', 'BF TOP NOTE RIGHT', 24, false);
+				animation.addByPrefix('singRIGHTmiss', 'BF TOP INVISIBLE', 24, false);
+				animation.addByPrefix('singUPmiss', 'BF TOP INVISIBLE', 24, false);
+				animation.addByPrefix('singDOWNmiss', 'BF TOP INVISIBLE', 24, false);
+				animation.addByPrefix('singLEFTmiss', 'BF TOP INVISIBLE', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP", -7, 19);
+				addOffset("singRIGHT", -16, 7);
+				addOffset("singLEFT", -1, 10);
+				addOffset("singDOWN", -3, -3);
+				addOffset("singUPmiss", -30, 10);
+				addOffset("singRIGHTmiss", -30, -15);
+				addOffset("singLEFTmiss", -25, 10);
+				addOffset("singDOWNmiss", 10, 20);
+
+				playAnim('idle');
+				
+				flipX = true;
 		}
 
 		dance();
