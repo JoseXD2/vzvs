@@ -572,7 +572,6 @@ class Character extends FlxSprite
 				flipX = true;
 
 			case 'sonic':
-				var tex = AtlasFrameMaker.construct('SONIC');
 				frames = tex;
 				animation.addByPrefix('idle', 'Idle', 24, false);
 				animation.addByPrefix('singUP', 'Up', 24, false);
@@ -591,8 +590,7 @@ class Character extends FlxSprite
 				addOffset("firstDeath", 11, 12);
 
 			case 'omochao':
-				var tex = AtlasFrameMaker.construct('OMOCHAO');
-				frames = tex;
+                                frames = tex;
 				animation.addByPrefix('idle', 'Idle', 24, false);
 				animation.addByPrefix('singUP', 'Up', 24, false);
 				animation.addByPrefix('singDOWN', 'Down', 24, false);
@@ -604,9 +602,8 @@ class Character extends FlxSprite
 				addOffset("singRIGHT", 1, 18);
 				addOffset("singLEFT", 18, 21);
 				addOffset("singDOWN", 10, -3);
-
+						
 				case 'bf-sonic':
-				var tex = AtlasFrameMaker.construct('SONIC_PLAYABLE');
 				frames = tex;
 				animation.addByPrefix('idle', 'Idle', 24, false);
 				
