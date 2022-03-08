@@ -565,6 +565,25 @@ class Character extends FlxSprite
 				playAnim('idle');
 				
 				flipX = true;
+			case 'sonic':
+				var tex = AtlasFrameMaker.construct('SONIC');
+				frames = tex;
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByPrefix('singUP', 'Up', 24, false);
+				animation.addByPrefix('singDOWN', 'Down', 24, false);
+				animation.addByPrefix('singLEFT', 'Left', 24, false);
+				animation.addByPrefix('singRIGHT', 'Right', 24, false);
+				animation.addByPrefix('fuckyoukenny','WOO!',24,false);
+				animation.addByPrefix('firstDeath', 'DEAD', 12, false);
+
+				addOffset('idle');
+				addOffset("singUP", 83, 43);
+				addOffset("singRIGHT", -1, 49);
+				addOffset("singLEFT", 150, -40);
+				addOffset("singDOWN", 34, 43);
+				addOffset("fuckyoukenny", 11, 12);
+				addOffset("firstDeath", 11, 12);
+
 		}
 
 		dance();
